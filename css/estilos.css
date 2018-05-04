@@ -1,0 +1,149 @@
+#menu, #menu_opciones{
+	background: #4D0000 ;
+	position: fixed;
+	width: 100%;
+	border-style: none;
+	border-radius:unset;
+	margin: 0;
+	z-index: 10;
+	text-align: center;
+}
+#menu_opciones{
+	background: #b17e25a6 ;
+}
+#logo{
+	width: 100%;
+	text-align: center;
+}
+#logo img{
+	width: 10%;
+    margin-bottom: -3%;
+    margin-top: -1%;
+}
+.iconos_redes_sociales{
+ 	text-align: right;
+ 	margin-right: 10%;
+}
+.iconos_redes_sociales img{
+	width: 2% !important;
+    margin: 4px!important;
+    margin-top: -2% !important;
+}
+
+/*#inicio{
+	width: 100%;
+	height: 100vh;
+}
+.fondocss{
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+}*/
+#inicio{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/spa_inicio.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.contenido_inicio{
+	display: inline-block;
+	margin-left: 60%;
+	text-align: center;
+	margin-top: 30vh;
+
+}
+.contenido_inicio h1{
+	font-size: 80px;
+	color:#000;
+
+
+}
+.contenido_inicio img{
+	width: 80%;
+}
+.descripcion_inicio {
+	width: 100%;
+	height: 15vh;
+ 
+}
+.seccion{
+	color: #fff;
+	font-size: 20px;
+    height: 15vh;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ffffff69;
+    margin-top: 18vh;
+    background: #4d0000cf;
+}
+#nosotros{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/nosotros.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.contenido_nosotros{
+	width: 25%;
+	right: 50px;
+	margin-top: 20vh;
+	position: absolute;
+	border-bottom: 3px solid #000;
+	border-top: 2px solid #000;
+	text-align: center;
+	color: #000;
+}
+.contenido_nosotros h1{
+	font-size: 60px;
+	text-align: center;
+}
+.contenido_nosotros p{
+	font-size: 20px;
+	text-align: center;
+}
+.descripcion_nosotros{
+	background: #653333;
+	height: 30vh;
+	margin-top: 70vh;
+	text-align: center;
+	color: #fff;
+	padding: 30px 300px;
+	font-size: 15px;
+
+	position: absolute;
+}
+.descripcion_nosotros img
+{
+ width: 15%;
+}
+
+#servicios{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/servicios.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#promociones{
+	width: 100%;
+	height: 100vh;
+	background: #6E5C44
+}
+#citas{
+	width: 100%;
+	height: 100vh;
+	background: #ccc;
+}
+#ubicacion{
+	width: 100%;
+	height: 100vh;
+	background: #999;
+}
+
