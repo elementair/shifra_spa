@@ -12,8 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	
-
+	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
 </head>
 <body>
 	<header id="menu">
@@ -63,13 +62,47 @@
 	</header>
 	<!-- AQUI VA EL JUMBOTRON -->
 	<section id="inicio">
+
+			  <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel1" data-slide-to="1"></li>
+			      <li data-target="#myCarousel1" data-slide-to="2"></li>
+			      <li data-target="#myCarousel1" data-slide-to="3"></li>
+			    </ol>
+			    <div class="carousel-inner">
+                    <div class="item active imagen_inicio" style="background-image: url('img/home/spa.jpg');">
+                    </div>
+                    <div class="item imagen_inicio" style="background-image: url('img/home/spa2.jpg');">
+                    </div>
+                    <div class="item imagen_inicio" style="background-image: url('img/home/spa_inicio.jpg');">
+                    </div>
+                    <div class="item video_inicio">
+				      <video class="img-responsive center-block fondocss"  loop="loop" autoplay="autoplay">
+				        <source src="video/home.mp4" type="video/mp4">
+				      </video>
+				    </div>
+        		</div>
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			    <div class="contenido_inicio">
+					<h1>BIENVENIDOS</h1><br>
+					<img src="img/logo_negro.svg">
+				</div>
+			  </div>
+	
 		<!-- <video class="fondocss" loop="loop" autoplay="autoplay" >
 			<source src="video/1.mp4" type="video/mp4">
 		</video> -->
-		<div class="contenido_inicio">
-			<h1>BIENVENIDOS</h1><br>
-			<img src="img/logo_negro.svg">
-		</div>
+				
 		<!-- <div class="container-fluid descripcion_inicio">
 			<div class="row">
 			    <div class="col-sm-3 seccion">nosotros</div>
@@ -78,6 +111,21 @@
 			    <div class="col-sm-3 seccion">nosotros</div>
 		  	</div>
 		</div> -->
+		<script type="text/javascript">
+			$('#myCarousel1').on('slid.bs.carousel', function (e) {
+			   let elemento = $('#myCarousel1 .item.active video').first();
+			   if (elemento.prop("tagName") == "VIDEO") {
+			     elemento.get(0).play();
+			   }
+			});
+
+			$('#myCarousel1').bind('slide.bs.carousel', function (e) {  
+			   let elemento = $('#myCarousel1 .item.active video').first();
+			   if (elemento.prop("tagName") == "VIDEO") {
+			     elemento.get(0).pause();
+			   }
+			});
+		</script>
 	</section>
 	<section id="nosotros">
 		<section class="nosotros_seccion1">
@@ -176,9 +224,81 @@
 					    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 					  </div>
 					  <button type="submit" class="btn btn-primary">Enviar</button>
-					  <button type="submit" class="btn btn-primary">completar cita</button>
+					  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_formulario">completar cita</button>
 					</form>
-					
+			
+	
+					<!-- Modal -->
+					<div class="modal fade" id="Modal_formulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-lg" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h6 class="modal-title" id="exampleModalLabel"><strong> Vive la experiencia en <img src="img/logo_blanco.png"></strong> <br>¡Agenda tu cita! </h6>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	<div class="row">
+					      		<div class="col-sm-12">
+					      			<div class="form-group">
+							    		<label for="exampleInputEmail1">Nombre</label>
+							    		<input type="txt" class="form-control" id="exampleInputName1" placeholder="Enter name">
+							  		</div>
+							  	</div>
+							  	<div class="col-sm-12">
+							  		<div class="form-group">
+						    			<label for="exampleInputEmail1">Email</label>
+						   				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						    			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							  		</div>
+							  	</div>
+							  	<div class="col-sm-12">				
+							  		<div class="form-group">
+							    		<label for="exampleTextarea">Escribe tu preguta.</label>
+							    		<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+							  		</div>
+							  	</div>
+      							<div class="col-sm-12">
+							        <div class="form-group">
+							          <label><strong>Servicios:</strong></label>
+							          <select name="booking_treatment" class="form-control" required="" aria-required="true">
+							            <option value="">-- seleccionar --</option>
+							            <option>Masajes</option>
+							            <option>Servicios de spa</option>
+							            <option>Tratamientos faciales</option>
+							            <option>Faciales orgánicos</option>
+							            <option>Aparatología de vanguardia</option>
+							            <option>Tratamientos corporales</option>
+							            <option>Corporales con aparatología</option>
+							            <option>Estética</option>
+							            <option>Barbería</option>
+							            <option>Depilación con cera</option>
+							            <option>Paquete 1</option>
+							            <option>Paquete 2</option>
+							            <option>Paquete 3</option>
+							          </select>
+							        </div>
+							    </div>
+						        <div class="col-sm-12">
+						          <div class="form-group"  id='dia'>
+						            <label><strong>Día:</strong></label>
+						            <input type="text" placeholder="Dia" class="form-control date-picker hasDatepicker" name="booking_arrival_date" required="" aria-required="true" id="dp1525801322846">
+						          </div>
+						        </div>
+						        <div class="col-sm-12">
+							        <div class="form-group" id='hora'>
+							          <label><strong>Hora:</strong></label>
+							          <input type="text" placeholder="Hora" class="form-control time-picker ui-timepicker-input error" name="booking_time" required="" aria-required="true" autocomplete="off" aria-invalid="true"><label id="booking_time-error" class="error" for="booking_time">This field is required.</label>
+							        </div>
+								</div>
+							    <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							        <button type="button" class="btn btn-primary">Save changes</button>
+							    </div>
+					        </div>
+					  	</div>
+					</div>	
 			    </div>
 		  	</div>
 		</div>
@@ -203,6 +323,13 @@
 		    <li><img src="img/promociones/4.jpg" /></li>
 		    <li><img src="img/promociones/5.jpg" /></li>
 		    <li><img src="img/promociones/6.jpg" /></li>
+		    <!-- <li><div class="container_img_promociones" style="background: url(img/promociones/1.jpg);" ></div></li>
+		    <li><div class="container_img_promociones" style="background: url(img/promociones/2.jpg);" ></div></li>
+		    <li><div class="container_img_promociones" style="background: url(img/promociones/3.jpg);" ></div></li>
+		    <li><div class="container_img_promociones" style="background: url(img/promociones/4.jpg);" ></div></li>
+		    <li><div class="container_img_promociones" style="background: url(img/promociones/5.jpg);" ></div></li>
+		    <li><div class="container_img_promociones" style="background: url(img/promociones/6.jpg);" ></div></li> -->
+
 		</ul>
 	</section>
 	<section id="ubicacion">
@@ -260,7 +387,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+
+<!-- datetimepicker -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-datetimepicker.es.js"></script>
+<!-- fin datetimepicker -->
+<script type="text/javascript">
+     $('#dia').datetimepicker({
+          format: 'YYYY-MM-DD '       
+      });
+      $('#dia').click("DatePicker").show();
+
+   </script>
+   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
 <script type="text/javascript" src="js/flexisel.js"></script>
 </body>
 </html>
