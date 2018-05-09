@@ -162,7 +162,7 @@
 	text-align: center;
 }
 #menu_opciones{
-	background: #b17e25a6 ;
+	background: #A28356 ;
 }
 #logo{
 	width: 100%;
@@ -172,6 +172,7 @@
 	width: 10%;
     margin-bottom: -3%;
     margin-top: -1%;
+    margin-left: 0px;
 }
 .iconos_redes_sociales{
  	text-align: right;
@@ -196,7 +197,6 @@
 	width: 100%;
 	height: 100vh;
 	/*text-align: right;*/
-	
 }
 .imagen_inicio{
 
@@ -213,7 +213,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
+/*editable-inicio*/
 .contenido_inicio{
 	position: absolute;
     text-shadow: 2px 2px 8px #201F1F;
@@ -221,8 +221,6 @@
 	margin-left: 60%;
 	text-align: center;
 	top: 30vh;
-	
-
 }
 .contenido_inicio h1{
 	font-size: 80px;
@@ -239,7 +237,7 @@
 	height: 15vh;
  
 }
-.seccion{
+/*.seccion{
 	color: #fff;
 	font-size: 20px;
     height: 15vh;
@@ -248,7 +246,8 @@
     border: 1px solid #ffffff69;
     margin-top: 18vh;
     background: #4d0000cf;
-}
+}*/
+/*fin editable-inicio*/
 #nosotros{
 	width: 100%;
 	height: 100vh;
@@ -262,6 +261,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+/*nosotros editable*/
 .contenido_nosotros{
 	width: 25%;
 	right: 50px;
@@ -276,6 +276,9 @@
 	font-size: 60px;
 	text-align: center;
 	font-family: Montserrat-Medium;
+}
+.contenido_nosotros h2{
+	font-size: 40px;
 }
 .contenido_nosotros p{
 	font-size: 20px;
@@ -295,7 +298,7 @@
 {
  width: 15%;
 }
-
+/*fin nosotros editable*/
 #servicios{
 	width: 100%;
 	height: 120vh;
@@ -475,18 +478,6 @@
     padding: 13% 40%;
     color: #fff;
 }
-@media only screen and (min-width: 1400px) {
-
-}
-@media only screen and (min-width: 1200px) {}
-@media only screen and (min-width: 1024px) {}
-@media only screen and (min-width: 768px) {}
-@media only screen and (min-width: 600px) {}
-@media only screen and (min-width: 480px) {}
-@media only screen and (min-width: 320px) {}
-
-
-
 /*cambio de elementos de bootstrap*/
 
 .modal-content {
@@ -517,6 +508,88 @@
     background: #fff;
     border-radius: 0px;
 }
+.navbar-default .navbar-nav>li>a {
+    color: #fff!important;
+    text-align: center;
+    margin: 0px 10px;
+    font-size: 15px;
+    font-family: Montserrat-Regular;
+}
+
+@media only screen and (min-width: 1400px) {
+
+}
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (max-width: 360px) {
+	/*menu*/
+	#logo{
+		text-align: left;
+	}
+	#logo img{
+		width: 22%;
+	    margin-bottom: -8%;
+	    margin-top: -1%;
+	    margin-left: 30px;
+	}
+	.iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	}
+	.iconos_redes_sociales img{
+		width: 8% !important;
+	    margin: 5px!important;
+	    margin-top: -8% !important;
+	}
+	/*fin menu*/
+	/*editable-inicio*/
+	.contenido_inicio{
+	    text-shadow: 2px 2px 8px #201F1F;
+		margin-left: 10%;
+		top: 40vh;
+	}
+	.contenido_inicio h1{
+		font-size: 30px;
+	}
+	.contenido_inicio img{
+		width: 60%;
+	}
+	.descripcion_inicio {
+		width: 100%;
+		height: 15vh;
+	}
+	/*fin editable-inicio*/
+	/*nosotros editable*/
+	.contenido_nosotros{
+		width: 75%;
+		right: 50px;
+		margin-top: 5vh;
+		border-bottom: 3px solid #000;
+		border-top: 2px solid #000;
+	}
+	.contenido_nosotros h1{
+		font-size: 30px;
+	}
+	.contenido_nosotros p{
+		font-size: 12px;
+	}
+	.descripcion_nosotros{
+		height: 60vh;
+		padding: 30px 30px;
+		font-size: 15px;
+	}
+	.descripcion_nosotros img
+	{
+	 	width: 35%;
+	}
+/*fin nosotros editable*/
+}
+
+
+
 
 
     

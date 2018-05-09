@@ -10,11 +10,15 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
+	<link id="scrollUpTheme" rel="stylesheet" href="css/themes/tab.css">
+	<!-- Scroll master -->
+    <link rel="stylesheet" href="css/labs.css">
+
+        
 </head>
-<body>
+<body id="top">
 	<header id="menu">
 		<section id="logo">
 			<img src="img/logo-shifra.svg">
@@ -138,24 +142,49 @@
 		</section>
 		<section class="descripcion_nosotros">
 			<img src="img/logo_blanco.png">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Es un espacio de relajación de alto nivel, vanguardista y con personal altamente capacitado. Dicho conjunto crea una experiencia única de emociones y sentimientos, desde el momento de la deliciosa llegada a SHIFRA, hasta la deliciosa despedida y un seguimiento de su terapia sumamente agradable, generando así, un lugar muy confortable y especial para Ti.</p>
 		</section> 
 	</section>
 	<section id="servicios">
 		<div class="seccion_1_servicios">
 			<div class="txt_servicios">SERVICIOS</div>
 				<ul id="flexiselDemo2">
-				    <li><img src="img/servicios/masaje.jpg" /></li>
-				    <li><img src="img/servicios/barberia.jpg" /></li>
-				    <li><img src="img/servicios/pedicure.jpg" /></li>
-				    <li><img src="img/servicios/facial.jpg" /></li>
-				    <li><img src="img/servicios/reductivo.jpg" /></li>
-				    <li><img src="img/servicios/otros.jpg" /></li>
+				    <li>
+				    	<div class="contenedor_ser" style="background-image: url(img/servicios/masaje.jpg);">
+					    	<h2>MASAJE</h2>
+					    	<img src="img/logo_blanco.png">
+						</div>
+				    </li>
+				    <li>
+				    	<div class="contenedor_ser" style="background-image: url(img/servicios/barberia.jpg);">
+				    		<h2>BARBERIA</h2>
+				    		<img src="img/logo_blanco.png">
+						</div>
+					</li>
+				    <li>
+				    	<div class="contenedor_ser" style="background-image: url(img/servicios/facial.jpg);">
+				    		<h2>FACIAL</h2>
+				    		<img src="img/logo_blanco.png">
+				    	</div>
+				    </li>
+				    <li>
+				    	<div class="contenedor_ser" style="background-image: url(img/servicios/pedicure.jpg);">
+				    		<h2>PEDICURE</h2>
+				    		<img src="img/logo_blanco.png">
+				    	</div>
+				    </li>
+				    <li>
+				    	<div class="contenedor_ser" style="background-image: url(img/servicios/reductivo.jpg);">
+				    		<h2>REDUCTIVO</h2>
+				    		<img src="img/logo_blanco.png">		
+				    	</div>
+				    </li>
+				    <li>
+				    	<div class="contenedor_ser" style="background-image: url(img/servicios/otros.jpg);">
+				    		<h2>OTROS</h2>
+				    		<img src="img/logo_blanco.png">
+				    	</div>
+				    </li>
 				</ul>
 		</div>
 		<div class="seccion_2_servicios">
@@ -306,31 +335,55 @@
 	<section id="instalaciones">
 		<div class="txt_instalaciones">INSTALACIONES</div>
 		<ul id="flexiselDemo3">
-		    <li><img src="img/instalaciones/barberia.JPG" /></li>
-		    <li><img src="img/instalaciones/recepcion.JPG" /></li>
-		    <li><img src="img/instalaciones/spa.JPG" /></li>
-		    <li><img src="img/instalaciones/vestidores.JPG" /></li>
-		    <li><img src="img/instalaciones/belleza.JPG" /></li>
-		    <li><img src="img/instalaciones/otros.JPG" /></li>
-		</ul>	                 
+			contenedor_inst
+			<li><div data-toggle="modal" data-target="#exampleModal" class="contenedor_inst" style="background-image: url(img/instalaciones/barberia.JPG);"><div class="sombreado_galeria_instalaciones"><img src="img/lupa-con-un-ojo-blanco.svg"></div></div></li>
+		    <li><div class="contenedor_inst" style="background-image: url(img/instalaciones/recepcion.JPG);"><div class="sombreado_galeria_instalaciones"><img src="img/lupa-con-un-ojo-blanco.svg"></div></div></li>
+
+		    <li><div class="contenedor_inst" style="background-image: url(img/instalaciones/spa.JPG);"><div class="sombreado_galeria_instalaciones"><img src="img/lupa-con-un-ojo-blanco.svg"></div></div></li>
+		    <li><div class="contenedor_inst" style="background-image: url(img/instalaciones/vestidores.JPG);"><div class="sombreado_galeria_instalaciones"><img src="img/lupa-con-un-ojo-blanco.svg"></div></div></li>
+		    <li><div class="contenedor_inst" style="background-image: url(img/instalaciones/belleza.JPG);"><div class="sombreado_galeria_instalaciones"><img src="img/lupa-con-un-ojo-blanco.svg"></div></div></li>
+		    <li><div class="contenedor_inst" style="background-image: url(img/instalaciones/otros.JPG);"><div class="sombreado_galeria_instalaciones"><img src="img/lupa-con-un-ojo-blanco.svg"></div></div></li>
+		</ul>
+		<!-- Modal -->
+		<div class="modal fade"  id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg"  role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+			    <!-- Indicators -->
+			    <div class="carousel-inner">
+                    <div class="item active imagen_inicio" style="background-image: url('img/instalaciones/barberia.JPG');">
+                    </div>
+                    <div class="item imagen_inicio" style="background-image: url('img/instalaciones/belleza.JPG');">
+                    </div>
+                    <div class="item imagen_inicio" style="background-image: url('img/instalaciones/recepcion.JPG');">
+                    </div>
+        		</div>
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>	                 
 	</section>
 	<section id="promociones">
 		<div class="txt_promociones">PROMOCIONES</div>
 		<ul id="flexiselDemo4">
-		    <li><img src="img/promociones/1.jpg" /></li>
-		    <li><img src="img/promociones/2.jpg" /></li>
-		    <li><img src="img/promociones/3.jpg" /></li>
-		    <li><img src="img/promociones/4.jpg" /></li>
-		    <li><img src="img/promociones/5.jpg" /></li>
-		    <li><img src="img/promociones/6.jpg" /></li>
-		    <!-- <li><div class="container_img_promociones" style="background: url(img/promociones/1.jpg);" ></div></li>
-		    <li><div class="container_img_promociones" style="background: url(img/promociones/2.jpg);" ></div></li>
-		    <li><div class="container_img_promociones" style="background: url(img/promociones/3.jpg);" ></div></li>
-		    <li><div class="container_img_promociones" style="background: url(img/promociones/4.jpg);" ></div></li>
-		    <li><div class="container_img_promociones" style="background: url(img/promociones/5.jpg);" ></div></li>
-		    <li><div class="container_img_promociones" style="background: url(img/promociones/6.jpg);" ></div></li> -->
-
-		</ul>
+		    <li><div class="contenedor_promo" style="background-image: url(img/promociones/1.jpg);"></div></li>
+		    <li><div class="contenedor_promo" style="background-image: url(img/promociones/2.jpg);"></div></li>
+		    <li><div class="contenedor_promo" style="background-image: url(img/promociones/3.jpg);"></div></li>
+		    <li><div class="contenedor_promo" style="background-image: url(img/promociones/4.jpg);"></div></li>
+		    <li><div class="contenedor_promo" style="background-image: url(img/promociones/5.jpg);"></div></li>
+		    <li><div class="contenedor_promo" style="background-image: url(img/promociones/6.jpg);"></div></li>
+		 </ul>
 	</section>
 	<section id="ubicacion">
 		<div class="txt_ubicacion">UBICACION</div>
@@ -338,7 +391,7 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d466.4959561678693!2d-103.41198747623476!3d20.711538246202448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af03b8d9c2b5%3A0xba20d3c808e05657!2sShifra+Spa!5e0!3m2!1ses!2smx!4v1525540080187" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</section>
-
+	
 	<footer id="footer">
 		<div class="container-fluid descripcion_inicio">
 			<div class="row">
@@ -379,9 +432,25 @@
 		</div>
 		<div class="ft_pie_pagina">Todos los Derechos Reservados ©2018 <strong>Shifa Spa</strong></div>
 	</footer>
+	<a href="#top" class="to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+	<style type="text/css">
+		.to-top{
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: #4c0500;
+			color:#fff;
+			padding: 9px 12px;
+			border-radius: 50%;
 
-	<script src="js/jquery.js"></script>
-
+		}
+		.to-top:hover{
+			background: #a28356;
+			color:#4c0500;
+		}
+	</style>
+	
+<script src="js/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -396,13 +465,31 @@
 <script src="js/bootstrap-datetimepicker.es.js"></script>
 <!-- fin datetimepicker -->
 <script type="text/javascript">
-     $('#dia').datetimepicker({
+    $('#dia').datetimepicker({
           format: 'YYYY-MM-DD '       
-      });
-      $('#dia').click("DatePicker").show();
+    });
+    $('#dia').click("DatePicker").show();
+</script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var offset = 250;
+			var duration = 500;
 
-   </script>
-   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			$(window).scroll(function(){
+				if($(this).scrollTop()> offset){
+					$('.to-top').fadeIn(duration);
+				}else{
+					$('.to-top').fadeOut(duration);
+				}
+			});
+			$('.to-top').click(function(){
+				$('body').animate({scrollTop:0},duration);
+			})
+		});
+
+
+	</script>
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 <script type="text/javascript" src="js/flexisel.js"></script>
 </body>
 </html>
