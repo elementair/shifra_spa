@@ -398,7 +398,7 @@
 			    <div class="col-md-3 col-sm-6 col-xs-12 ft_logo">
 			    	<img src="img/logo_blanco.png">
 			    </div>
-			    <div class="col-md-3 col-sm-6 col-xs-12 ft_menu">
+			    <div class="col-md-3 col-sm-6 col-xs-6 ft_menu">
 			    	MENÚ
 			    	<hr>
 			    	<ul>
@@ -409,7 +409,7 @@
 			    		<li>Ubicación</li>
 			    	</ul>
 			    </div>
-			    <div class="col-md-3 col-sm-6 col-xs-12 ft_mapa">
+			    <div class="col-md-3 col-sm-6 col-xs-6 ft_mapa">
 			    	MAPA
 			    	<hr>
 			    	<ul>

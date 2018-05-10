@@ -299,6 +299,7 @@
  width: 15%;
 }
 /*fin nosotros editable*/
+/*servivios editable */
 #servicios{
 	width: 100%;
 	height: 120vh;
@@ -324,31 +325,7 @@
 	display: inline-block;
 	
 }
-#instalaciones{
-	width: 100%;
-	height: 60vh;
-	background: #4D0000;
-}
-.txt_instalaciones{
-	font-size: 40px;
-	font-family: Montserrat-Medium;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-}
-.container_img_promociones{}
-#promociones{
-	padding-top:50px; 
-	width: 100%;
-	height: 50vh;
-	background: #260F01;
-}
-.txt_promociones{
-	font-size: 40px;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-}
+/*citas editable*/
 #citas{
 	width: 100%;
 	height: 100vh;
@@ -363,15 +340,40 @@
 	color: #000;
 }
 .citas_formulario h1 strong{
-	font-size: 55px;
-
-	
+	font-size: 55px;	
 }	
 
 .citas_formulario img{
 	padding: 10px;
 	width: 40%;
+	margin-top: 0px;
 	margin-left: 50%;
+}
+/*fin citas editable*/
+#instalaciones{
+	width: 100%;
+	height: 60vh;
+	background: #4D0000;
+}
+.txt_instalaciones{
+	font-size: 40px;
+	font-family: Montserrat-Medium;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+/*fin servicios editable*/
+#promociones{
+	padding-top:50px; 
+	width: 100%;
+	height: 50vh;
+	background: #260F01;
+}
+.txt_promociones{
+	font-size: 40px;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
 }
 #ubicacion{
 	padding-top: 50px; 
@@ -393,10 +395,11 @@
 	height: 80%;
 
 }
+/*footer editable*/
 #footer{
 	width: 100%;
 	height: 25vh;
-	background: #4D0000
+	background: #4D0000;
 }
 .ft_logo img{
 	width: 90%;
@@ -459,6 +462,7 @@
     margin: 4px!important;
     margin-top: -2% !important;
 }
+/*fin footer editable*/
 /*CARUSEL*/
   
  #myCarousel{
@@ -520,10 +524,829 @@
 
 }
 @media only screen and (min-width: 1200px) {}
-@media only screen and (min-width: 1024px) {}
-@media only screen and (min-width: 768px) {}
-@media only screen and (min-width: 600px) {}
-@media only screen and (min-width: 480px) {}
+@media only screen and (max-width: 1024px) {
+	/*menu*/
+	#logo{
+	text-align: center;
+	}
+	#logo img{
+		width: 15%;
+	    margin-bottom: -4%;
+	    margin-top: -2%;
+	}
+	.iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	}
+	.iconos_redes_sociales img{
+		width: 4% !important;
+	    margin: 5px!important;
+	    margin-top: -6% !important;
+	}
+	/*fin menu*/
+		/*editable-inicio*/
+	.contenido_inicio{
+	    text-shadow: 2px 2px 8px #201F1F;
+		margin-left: 30%;
+		top: 40vh;
+	}
+	.contenido_inicio h1{
+		font-size: 55px;
+	}
+	
+	.contenido_inicio img{
+		width: 90%;
+	}
+	.descripcion_inicio {
+		width: 100%;
+		height: 15vh;
+	}
+	/*fin editable-inicio*/
+	/*nosotros editable*/
+	#nosotros{
+		height: 100vh;
+	}
+	.nosotros_seccion1{
+		height: 70vh;
+	}
+	.contenido_nosotros{
+		width: 50%;
+		right: 50px;
+		margin-top: 10vh;
+		border-bottom: 3px solid #000;
+		border-top: 2px solid #000;
+	}
+	.contenido_nosotros h1{
+		font-size: 35px;
+	}
+	.contenido_nosotros h2{
+		font-size: 22px;
+	}
+	.contenido_nosotros p{
+		font-size: 16px;
+	}
+	.descripcion_nosotros{
+		height: 40vh;
+		padding: 30px 30px;
+		font-size: 15px;
+	}
+	.descripcion_nosotros img
+	{
+	 	width: 20%;
+	}
+	/*fin nosotros editable*/
+	/*footer editable*/
+	#footer{
+		padding-top: 15%;
+		height: 50vh;
+		
+	}
+	.ft_logo img{
+		width: 90%;
+		padding: 40px 0px ;
+	}
+	.ft_menu{
+		font-size: 22px;
+	}
+	.ft_menu ul{
+		font-size: 14px;
+		margin-left: 10px;
+	}
+	.ft_menu hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_mapa{
+		color: #fff;
+		font-size: 20px;
+	}
+	.ft_mapa ul{
+		margin-left: 10px;
+		font-size: 14px;
+	}
+	.ft_mapa hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_contacto{
+		padding: 20px 10px;
+		font-size: 14px;
+	}
+	.ft_contacto strong{
+		font-size: 20px;
+	}
+	.ft_pie_pagina{
+		font-size: 10px;
+	    width: 100%;
+	    height: 5vh;
+	    padding: 10px; 
+	}
+	.ft_iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	 	padding-top: 45px;
+	}
+	.ft_iconos_redes_sociales img{
+		width: 17% !important;
+	    margin: 4px!important;
+	    margin-top: -6% !important;
+	}
+	/*fin footer editable*/
+}
+@media only screen and (max-width: 850px) {
+	/*menu*/
+	#logo{
+	text-align: left;
+	}
+	#logo img{
+		width: 20%;
+	    margin-bottom: -7%;
+	    margin-top: -3%;
+	    margin-left: 60px;
+	}
+	.iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	}
+	.iconos_redes_sociales img{
+		width: 6% !important;
+	    margin: 5px!important;
+	    margin-top: -6% !important;
+	}
+	/*fin menu*/
+	/*editable-inicio*/
+	.contenido_inicio{
+	    text-shadow: 2px 2px 8px #201F1F;
+		margin-left: 30%;
+		top: 50vh;
+	}
+	.contenido_inicio h1{
+		font-size: 45px;
+	}
+	
+	.contenido_inicio img{
+		width: 70%;
+	}
+	.descripcion_inicio {
+		width: 100%;
+		height: 15vh;
+	}
+	/*fin editable-inicio*/
+	/*nosotros editable*/
+	#nosotros{
+		height: 100vh;
+	}
+	.nosotros_seccion1{
+		height: 70vh;
+	}
+	.contenido_nosotros{
+		width: 60%;
+		right: 50px;
+		margin-top: 10vh;
+		border-bottom: 3px solid #000;
+		border-top: 2px solid #000;
+	}
+	.contenido_nosotros h1{
+		font-size: 35px;
+	}
+	.contenido_nosotros h2{
+		font-size: 22px;
+	}
+	.contenido_nosotros p{
+		font-size: 16px;
+	}
+	.descripcion_nosotros{
+		height: 40vh;
+		padding: 30px 30px;
+		font-size: 15px;
+	}
+	.descripcion_nosotros img
+	{
+	 	width: 35%;
+	}
+	/*fin nosotros editable*/
+	/*servivios editable */
+	#servicios{
+		height: 120vh;
+		
+	}
+	.seccion_1_servicios{
+		height: 60vh;
+		
+	}
+	.txt_servicios{
+		font-size: 20px;
+		color: #fff;
+		padding: 10px;
+	}
+	.seccion_2_servicios{
+		height: 60vh;
+	}
+	/*fin servivios editable */
+	/*carusel*/
+	.carousel-inner>.item>h1{
+	    /* z-index: 2; */
+	    font-size: 30px;
+	    padding: 25% ;
+	}
+	/*citas editable*/
+	.citas_formulario{
+		padding: 40px;
+		font-family: Montserrat-Medium;
+		color: #000;
+	}
+	.citas_formulario h1{
+		font-size: 30px;
+	}
+	.citas_formulario h1 strong{
+		font-size: 35px;
+	}	
+	.citas_formulario img{
+		padding: 10px;
+		margin-top: -30px;
+		width: 50%;
+		margin-left: 50%;
+	}
+	/*fin citas editable*/
+	/*footer editable*/
+	#footer{
+		padding-top: 5%;
+		height: 50vh;
+		
+	}
+	.ft_logo img{
+		width: 50%;
+		padding: 40px 0px ;
+	}
+	.ft_menu{
+		font-size: 22px;
+	}
+	.ft_menu ul{
+		font-size: 14px;
+		margin-left: 30px;
+	}
+	.ft_menu hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_mapa{
+		color: #fff;
+		font-size: 20px;
+	}
+	.ft_mapa ul{
+		margin-left: 30px;
+		font-size: 14px;
+	}
+	.ft_mapa hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_contacto{
+		padding: 20px 100px;
+		font-size: 14px;
+	}
+	.ft_contacto strong{
+		font-size: 20px;
+	}
+	.ft_pie_pagina{
+		font-size: 10px;
+	    width: 100%;
+	    height: 5vh;
+	    padding: 10px; 
+	}
+	.ft_iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	 	padding-top: 45px;
+	}
+	.ft_iconos_redes_sociales img{
+		width: 17% !important;
+	    margin: 4px!important;
+	    margin-top: -6% !important;
+	}
+	/*fin footer editable*/
+}
+@media only screen and (max-width: 650px){
+	/*menu*/
+	#logo{
+		text-align: left;
+	}
+	#logo img{
+		width: 20%;
+	    margin-bottom: -7%;
+	    margin-top: -3%;
+	    margin-left: 30px;
+	}
+	.iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	}
+	.iconos_redes_sociales img{
+		width: 6% !important;
+	    margin: 5px!important;
+	    margin-top: -6% !important;
+	}
+	/*fin menu*/
+	/*editable-inicio*/
+	.contenido_inicio{
+	    text-shadow: 2px 2px 8px #201F1F;
+		margin-left: 30%;
+		top: 50vh;
+	}
+	.contenido_inicio h1{
+		font-size: 45px;
+	}
+	
+	.contenido_inicio img{
+		width: 70%;
+	}
+	.descripcion_inicio {
+		width: 100%;
+		height: 15vh;
+	}
+	/*fin editable-inicio*/
+	/*nosotros editable*/
+	#nosotros{
+		height: 120vh;
+	}
+	.nosotros_seccion1{
+		height: 70vh;
+	}
+	.contenido_nosotros{
+		width: 70%;
+		right: 50px;
+		margin-top: 25vh;
+		border-bottom: 3px solid #000;
+		border-top: 2px solid #000;
+	}
+	.contenido_nosotros h1{
+		font-size: 30px;
+	}
+	.contenido_nosotros h2{
+		font-size: 20px;
+	}
+	.contenido_nosotros p{
+		font-size: 16px;
+	}
+	.descripcion_nosotros{
+		height: 50vh;
+		padding: 30px 30px;
+		font-size: 15px;
+	}
+	.descripcion_nosotros img
+	{
+	 	width: 35%;
+	}
+	/*fin nosotros editable*/
+	/*servivios editable */
+	#servicios{
+		height: 120vh;
+		
+	}
+	.seccion_1_servicios{
+		height: 60vh;
+		
+	}
+	.txt_servicios{
+		font-size: 20px;
+		color: #fff;
+		padding: 10px;
+	}
+	.seccion_2_servicios{
+		height: 60vh;
+	}
+	/*fin servivios editable */
+	/*carusel*/
+	.carousel-inner>.item>h1{
+	    /* z-index: 2; */
+	    font-size: 30px;
+	    padding: 25% ;
+	}
+	/*citas editable*/
+	.citas_formulario{
+		padding: 40px;
+		font-family: Montserrat-Medium;
+		color: #000;
+	}
+	.citas_formulario h1{
+		font-size: 30px;
+	}
+	.citas_formulario h1 strong{
+		font-size: 35px;
+	}	
+	.citas_formulario img{
+		padding: 10px;
+		margin-top: -30px;
+		width: 50%;
+		margin-left: 50%;
+	}
+	/*fin citas editable*/
+	/*footer editable*/
+	#footer{
+		padding-top: 5%;
+		height: 70vh;
+		
+	}
+	.ft_logo img{
+		width: 50%;
+		padding: 40px 0px ;
+	}
+	.ft_menu{
+		font-size: 22px;
+	}
+	.ft_menu ul{
+		font-size: 14px;
+		margin-left: 30px;
+	}
+	.ft_menu hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_mapa{
+		color: #fff;
+		font-size: 20px;
+	}
+	.ft_mapa ul{
+		margin-left: 30px;
+		font-size: 14px;
+	}
+	.ft_mapa hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_contacto{
+		padding: 20px 100px;
+		font-size: 14px;
+	}
+	.ft_contacto strong{
+		font-size: 20px;
+	}
+	.ft_pie_pagina{
+		font-size: 10px;
+	    width: 100%;
+	    height: 5vh;
+	    padding: 10px; 
+	}
+	.ft_iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	 	padding-top: 45px;
+	}
+	.ft_iconos_redes_sociales img{
+		width: 8% !important;
+	    margin: 4px!important;
+	    margin-top: -6% !important;
+	}
+	/*fin footer editable*/
+}
+@media only screen and (max-width: 650px) and (orientation: landscape){
+	/*menu*/
+	#logo{
+		text-align: left;
+	}
+	#logo img{
+		width: 15%;
+	    margin-bottom: -7%;
+	    margin-top: -3%;
+	    margin-left: 30px;
+	}
+	.iconos_redes_sociales img{
+		width: 5% !important;
+	    margin: 5px!important;
+	    margin-top: -6% !important;
+	}
+	/*fin menu*/
+	/*editable-inicio*/
+	.contenido_inicio{
+	    text-shadow: 2px 2px 8px #201F1F;
+		margin-left: 30%;
+		top: 30vh;
+	}
+	.contenido_inicio h1{
+		font-size: 40px;
+	}
+	
+	.contenido_inicio img{
+		width: 60%;
+	}
+	.descripcion_inicio {
+		width: 100%;
+		height: 15vh;
+	}
+	/*fin editable-inicio*/
+	/*nosotros editable*/
+	#nosotros{
+		height: 150vh;
+	}
+	.nosotros_seccion1{
+		height: 90vh;
+	}
+	.contenido_nosotros{
+		width: 60%;
+		right: 50px;
+		margin-top: 10vh;
+		border-bottom: 3px solid #000;
+		border-top: 2px solid #000;
+	}
+	.contenido_nosotros h1{
+		font-size: 30px;
+	}
+	.contenido_nosotros h2{
+		font-size: 20px;
+	}
+	.contenido_nosotros p{
+		font-size: 16px;
+	}
+	.descripcion_nosotros{
+		height: 60vh;
+		padding: 30px 30px;
+		font-size: 15px;
+	}
+	.descripcion_nosotros img
+	{
+	 	width: 25%;
+	}
+	/*fin nosotros editable*/
+	/*servivios editable */
+	#servicios{
+		height: 120vh;
+		
+	}
+	.seccion_1_servicios{
+		height: 60vh;
+		
+	}
+	.txt_servicios{
+		font-size: 20px;
+		color: #fff;
+		padding: 10px;
+	}
+	.seccion_2_servicios{
+		height: 60vh;
+	}
+	/*fin servivios editable */
+	/*carusel*/
+	.carousel-inner>.item>h1{
+	    /* z-index: 2; */
+	    font-size: 20px;
+	    padding: 15% ;
+	}
+	/*citas editable*/
+	#citas{
+		height: 170vh;
+	}
+	.citas_formulario{
+		padding: 40px;
+		font-family: Montserrat-Medium;
+		color: #000;
+	}
+	.citas_formulario h1{
+		font-size: 30px;
+	}
+	.citas_formulario h1 strong{
+		font-size: 35px;
+	}	
+	.citas_formulario img{
+		padding: 10px;
+		margin-top: -30px;
+		width: 50%;
+		margin-left: 50%;
+	}
+	/*fin citas editable*/
+	/*footer editable*/
+	#footer{
+		padding-top: 10%;
+		height: 180vh;
+		
+	}
+	.ft_logo img{
+		width: 40%;
+		padding: 40px 0px;
+	}
+	.ft_menu{
+		font-size: 22px;
+	}
+	.ft_menu ul{
+		font-size: 14px;
+		margin-left: 30px;
+	}
+	.ft_menu hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_mapa{
+		color: #fff;
+		font-size: 20px;
+	}
+	.ft_mapa ul{
+		margin-left: 30px;
+		font-size: 14px;
+	}
+	.ft_mapa hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_contacto{
+		padding: 20px 100px;
+		font-size: 14px;
+	}
+	.ft_contacto strong{
+		font-size: 20px;
+	}
+	.ft_pie_pagina{
+		font-size: 10px;
+	    width: 100%;
+	    height: 8vh;
+	    padding: 10px; 
+	}
+	.ft_iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	 	padding-top: 45px;
+	}
+	.ft_iconos_redes_sociales img{
+		width: 8% !important;
+	    margin: 4px!important;
+	    margin-top: -6% !important;
+	}
+	/*fin footer editable*/
+}
+@media only screen and (max-width: 480px) {
+	/*menu*/
+	#logo{
+		text-align: left;
+	}
+	#logo img{
+		width: 25%;
+	    margin-bottom: -8%;
+	    margin-top: -1%;
+	    margin-left: 30px;
+	}
+	.iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	}
+	.iconos_redes_sociales img{
+		width: 8% !important;
+	    margin: 5px!important;
+	    margin-top: -8% !important;
+	}
+	/*fin menu*/
+	/*editable-inicio*/
+	.contenido_inicio{
+	    text-shadow: 2px 2px 8px #201F1F;
+		margin-left: 10%;
+		top: 40vh;
+	}
+	.contenido_inicio h1{
+		font-size: 30px;
+	}
+	
+	.contenido_inicio img{
+		width: 60%;
+	}
+	.descripcion_inicio {
+		width: 100%;
+		height: 15vh;
+	}
+	/*fin editable-inicio*/
+	/*nosotros editable*/
+	#nosotros{
+		height: 120vh;
+	}
+	.nosotros_seccion1{
+		height: 70vh;
+	}
+	.contenido_nosotros{
+		width: 70%;
+		right: 50px;
+		margin-top: 25vh;
+		border-bottom: 3px solid #000;
+		border-top: 2px solid #000;
+	}
+	.contenido_nosotros h1{
+		font-size: 30px;
+	}
+	.contenido_nosotros h2{
+		font-size: 20px;
+	}
+	.contenido_nosotros p{
+		font-size: 12px;
+	}
+	.descripcion_nosotros{
+		height: 50vh;
+		padding: 30px 30px;
+		font-size: 15px;
+	}
+	.descripcion_nosotros img
+	{
+	 	width: 35%;
+	}
+	/*fin nosotros editable*/
+	/*servivios editable */
+	#servicios{
+		height: 120vh;
+		
+	}
+	.seccion_1_servicios{
+		height: 60vh;
+		
+	}
+	.txt_servicios{
+		font-size: 20px;
+		color: #fff;
+		padding: 10px;
+	}
+	.seccion_2_servicios{
+		height: 60vh;
+	}
+	/*fin servivios editable */
+	/*carusel*/
+	.carousel-inner>.item>h1{
+	    /* z-index: 2; */
+	    font-size: 30px;
+	    padding: 25% ;
+	}
+	/*citas editable*/
+	#citas{
+		height: 100vh;
+	}
+	.citas_formulario{
+		padding: 40px;
+		font-family: Montserrat-Medium;
+		color: #000;
+	}
+	.citas_formulario h1{
+		font-size: 30px;
+	}
+	.citas_formulario h1 strong{
+		font-size: 35px;
+	}	
+	.citas_formulario img{
+		padding: 10px;
+		margin-top: -30px;
+		width: 50%;
+		margin-left: 50%;
+	}
+	/*fin citas editable*/
+	/*footer editable*/
+	#footer{
+		padding-top: 10%;
+		height: 90vh;
+		
+	}
+	.ft_logo img{
+		width: 90%;
+		padding: 40px 0px ;
+	}
+	.ft_menu{
+		font-size: 20px;
+	}
+	.ft_menu ul{
+		font-size: 12px;
+		margin-left: 10px;
+	}
+	.ft_menu hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_mapa{
+		color: #fff;
+		font-size: 20px;
+	}
+	.ft_mapa ul{
+		margin-left: 10px;
+		font-size: 12px;
+	}
+	.ft_mapa hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_contacto{
+		padding: 20px 50px;
+		font-size: 12px;
+	}
+	.ft_contacto strong{
+		font-size: 16px;
+	}
+	.ft_pie_pagina{
+		font-size: 10px;
+	    width: 100%;
+	    height: 5vh;
+	    padding: 10px; 
+	}
+	.ft_iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	 	padding-top: 45px;
+	}
+	.ft_iconos_redes_sociales img{
+		width: 10% !important;
+	    margin: 4px!important;
+	    margin-top: -2% !important;
+	}
+	/*fin footer editable*/
+}
 @media only screen and (max-width: 360px) {
 	/*menu*/
 	#logo{
@@ -554,6 +1377,7 @@
 	.contenido_inicio h1{
 		font-size: 30px;
 	}
+	
 	.contenido_inicio img{
 		width: 60%;
 	}
@@ -563,15 +1387,24 @@
 	}
 	/*fin editable-inicio*/
 	/*nosotros editable*/
+	#nosotros{
+		height: 130vh;
+	}
+	.nosotros_seccion1{
+		height: 70vh;
+	}
 	.contenido_nosotros{
-		width: 75%;
+		width: 70%;
 		right: 50px;
-		margin-top: 5vh;
+		margin-top: 25vh;
 		border-bottom: 3px solid #000;
 		border-top: 2px solid #000;
 	}
 	.contenido_nosotros h1{
 		font-size: 30px;
+	}
+	.contenido_nosotros h2{
+		font-size: 20px;
 	}
 	.contenido_nosotros p{
 		font-size: 12px;
@@ -585,7 +1418,110 @@
 	{
 	 	width: 35%;
 	}
-/*fin nosotros editable*/
+	/*fin nosotros editable*/
+	/*servivios editable */
+	#servicios{
+		height: 120vh;
+		
+	}
+	.seccion_1_servicios{
+		height: 60vh;
+		
+	}
+	.txt_servicios{
+		font-size: 20px;
+		color: #fff;
+		padding: 10px;
+	}
+	.seccion_2_servicios{
+		height: 60vh;
+	}
+	/*fin servivios editable */
+	/*carusel*/
+	.carousel-inner>.item>h1{
+	    /* z-index: 2; */
+	    font-size: 30px;
+	    padding: 25% ;
+	}
+	/*citas editable*/
+	#citas{
+		height: 100vh;
+	}
+	.citas_formulario{
+		padding: 40px;
+		font-family: Montserrat-Medium;
+		color: #000;
+	}
+	.citas_formulario h1{
+		font-size: 30px;
+	}
+	.citas_formulario h1 strong{
+		font-size: 35px;
+	}	
+	.citas_formulario img{
+		padding: 10px;
+		margin-top: -30px;
+		width: 50%;
+		margin-left: 50%;
+	}
+	/*fin citas editable*/
+	/*footer editable*/
+	#footer{
+		padding-top: 20%;
+		height: 100vh;
+		
+	}
+	.ft_logo img{
+		width: 90%;
+		padding: 30px 0px ;
+	}
+	.ft_menu{
+		font-size: 20px;
+	}
+	.ft_menu ul{
+		font-size: 12px;
+		margin-left: 10px;
+	}
+	.ft_menu hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_mapa{
+		color: #fff;
+		font-size: 20px;
+	}
+	.ft_mapa ul{
+		margin-left: 10px;
+		font-size: 12px;
+	}
+	.ft_mapa hr{
+	    width: 50%;
+	    border-bottom: 1px solid #fff;
+	}
+	.ft_contacto{
+		padding: 20px 50px;
+		font-size: 12px;
+	}
+	.ft_contacto strong{
+		font-size: 16px;
+	}
+	.ft_pie_pagina{
+		font-size: 10px;
+	    width: 100%;
+	    height: 5vh;
+	    padding: 10px; 
+	}
+	.ft_iconos_redes_sociales{
+	 	text-align: right;
+	 	margin-right: 10%;
+	 	padding-top: 45px;
+	}
+	.ft_iconos_redes_sociales img{
+		width: 10% !important;
+	    margin: 4px!important;
+	    margin-top: -2% !important;
+	}
+	/*fin footer editable*/
 }
 
 
