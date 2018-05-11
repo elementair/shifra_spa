@@ -1,3 +1,20 @@
+
+<?php
+require_once('requires.php');
+session_start();
+$_SESSION['numero_empresa'] = 99;
+$conexion = new Conexion();
+$conexion->selecciona_base_datos();
+$link = $conexion->link;
+
+$ruta_base = './sistema/';
+
+$fondo_index = new Fondo_Index($link);
+$resultado_fondo_index= $fondo_index->obten_registros_activos('fondo_index');
+$reguistros_fondo_index = $resultado_fondo_index['registros'];
+$titulo_fondo_index =$reguistros_fondo_index[0]['fondo_index_descripcion'];
+?>
+
 <!DOCTYPE html>
 <html lang="es-Mx">
 <head>
@@ -21,7 +38,7 @@
 <body id="top">
 	<header id="menu">
 		<section id="logo">
-			<img src="img/logo-shifra.svg">
+			<a href="#top"><img src="img/logo-shifra.svg"></a>
 			<div class="iconos_redes_sociales">
 				<img src="img/svg/icono_facebook.svg">
 				<img src="img/svg/icono_twitter.svg">
@@ -101,6 +118,7 @@
 					<h1>BIENVENIDOS</h1><br>
 					<img src="img/logo_negro.svg">
 				</div>
+				<div class="icono_ajenda"><img src="img/agenda-de-contactos.svg"><h4>¡Ajenda tu cita!</h4></div>
 			  </div>
 	
 		<!-- <video class="fondocss" loop="loop" autoplay="autoplay" >
@@ -456,8 +474,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-
-
 <!-- datetimepicker -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/moment.min.js"></script>
@@ -471,24 +487,23 @@
     $('#dia').click("DatePicker").show();
 </script>
 <script type="text/javascript">
-		$(document).ready(function(){
-			var offset = 250;
-			var duration = 500;
+	$(document).ready(function(){
+		var offset = 250;
+		var duration = 500;
 
-			$(window).scroll(function(){
-				if($(this).scrollTop()> offset){
-					$('.to-top').fadeIn(duration);
-				}else{
-					$('.to-top').fadeOut(duration);
-				}
-			});
-			$('.to-top').click(function(){
-				$('body').animate({scrollTop:0},duration);
-			})
+		$(window).scroll(function(){
+			if($(this).scrollTop()> offset){
+				$('.to-top').fadeIn(duration);
+			}else{
+				$('.to-top').fadeOut(duration);
+			}
 		});
-
-
-	</script>
+		$('.to-top').click(function(){
+			$('body').animate({scrollTop:0},duration);
+		})
+	});
+</script>
+<script type="text/javascript" src="js/funciones.js"></script>
 <script type="text/javascript" src="js/jquery.flexisel.js"></script>
 <script type="text/javascript" src="js/flexisel.js"></script>
 </body>
