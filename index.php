@@ -36,7 +36,7 @@ $titulo_fondo_index =$reguistros_fondo_index[0]['fondo_index_descripcion'];
         
 </head>
 <body id="top">
-	<header id="menu">
+	<header id="menu" >
 		<section id="logo">
 			<a href="#top"><img src="img/logo-shifra.svg"></a>
 			<div class="iconos_redes_sociales">
@@ -55,7 +55,6 @@ $titulo_fondo_index =$reguistros_fondo_index[0]['fondo_index_descripcion'];
 						<span class="icon-bar"></span>						
 						<span class="icon-bar"></span>
 					</button>
-					
 					<!-- Menu -->
 					<div class="collapse navbar-collapse" id="menu_navegacion">
 						<ul class="nav navbar-nav">
@@ -73,7 +72,7 @@ $titulo_fondo_index =$reguistros_fondo_index[0]['fondo_index_descripcion'];
 							</li> -->
 							<li><a class="desactive" href="#promociones">PROMOCIONES</a></li>
 							<li><a class="desactive" href="#citas">CITAS</a></li> 
-							<li><a class="desactive" href="#ubicacion">UBICACION</a></li>
+							<li><a class="desactive" href="#ubicacion">UBICACIÓN</a></li>
 		
 						</ul>
 					</div>
@@ -83,7 +82,7 @@ $titulo_fondo_index =$reguistros_fondo_index[0]['fondo_index_descripcion'];
 	</header>
 	<!-- AQUI VA EL JUMBOTRON -->
 	<section id="inicio">
-
+			<div class="degradado_inicio"></div>
 			  <div id="myCarousel1" class="carousel slide" data-ride="carousel">
 			    <!-- Indicators -->
 			    <ol class="carousel-indicators">
@@ -93,11 +92,11 @@ $titulo_fondo_index =$reguistros_fondo_index[0]['fondo_index_descripcion'];
 			      <li data-target="#myCarousel1" data-slide-to="3"></li>
 			    </ol>
 			    <div class="carousel-inner">
-                    <div class="item active imagen_inicio" style="background-image: url('img/home/spa.jpg');">
+                    <div class="item active imagen_inicio" style="background-image: url('img/home/shifra2.jpg');">
                     </div>
-                    <div class="item imagen_inicio" style="background-image: url('img/home/spa2.jpg');">
+                    <div class="item imagen_inicio" style="background-image: url('img/home/shifra1.jpg');">
                     </div>
-                    <div class="item imagen_inicio" style="background-image: url('img/home/spa_inicio.jpg');">
+                    <div class="item imagen_inicio" style="background-image: url('img/home/shifra3.jpg');">
                     </div>
                     <div class="item video_inicio">
 				      <video class="img-responsive center-block fondocss"  loop="loop" autoplay="autoplay">
@@ -114,11 +113,11 @@ $titulo_fondo_index =$reguistros_fondo_index[0]['fondo_index_descripcion'];
 			      <span class="glyphicon glyphicon-chevron-right"></span>
 			      <span class="sr-only">Next</span>
 			    </a>
-			    <div class="contenido_inicio">
+			   <!--  <div class="contenido_inicio">
 					<h1>BIENVENIDOS</h1><br>
-					<img src="img/logo_negro.svg">
-				</div>
-				<div class="icono_ajenda"><img src="img/agenda-de-contactos.svg"><h4>¡Ajenda tu cita!</h4></div>
+					<img src="img/logo_blanco.png">
+				</div> -->
+				<div class="icono_ajenda"><img src="img/agenda-de-contactos.svg"><h4>¡Agenda tu cita!</h4></div>
 			  </div>
 	
 		<!-- <video class="fondocss" loop="loop" autoplay="autoplay" >
@@ -271,7 +270,7 @@ $titulo_fondo_index =$reguistros_fondo_index[0]['fondo_index_descripcion'];
 					    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 					  </div>
 					  <button type="submit" class="btn btn-primary">Enviar</button>
-					  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_formulario">completar cita</button>
+					  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_formulario">Completar cita</button>
 					</form>
 			
 	
